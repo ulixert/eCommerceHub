@@ -1,10 +1,9 @@
-function App() {
+import { RouterProvider } from 'react-router-dom';
 
-  return (
-    <div className='text-red-500 text-5xl'>
-      Hello, world
-    </div>
-  )
+import { appRoutes } from '@routes/AppRoutes.tsx';
+
+function App() {
+  return <RouterProvider router={appRoutes} />;
 }
 
-export default App
+export default App;
